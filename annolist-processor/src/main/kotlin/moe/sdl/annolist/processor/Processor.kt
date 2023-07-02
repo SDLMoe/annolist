@@ -74,7 +74,7 @@ class Processor(
 
     if (marked.none()) return emptyList()
     codeGenerator.createNewFile(
-      dependencies = Dependencies(false, *marked.mapNotNull { it.containingFile }.toList().toTypedArray()),
+      dependencies = Dependencies(false, *resolver.getAllFiles().toList().toTypedArray()),
       packageName = options.pkg,
       fileName = options.fileName,
     ).use {
