@@ -10,7 +10,4 @@ repositories {
 
 dependencies {
   implementation(libs.kotlin.gradle.plugin)
-//    implementation(libs.build.kotlinpoet)
-//    implementation(libs.build.buildconfig)
-//    implementation(libs.build.shadow)
 }

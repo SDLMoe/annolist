@@ -1,7 +1,7 @@
 import com.diffplug.gradle.spotless.FormatExtension
 
 plugins {
-  id("com.google.devtools.ksp") version "1.8.22-1.0.11" apply false
+  alias(libs.plugins.ksp) apply false
   kotlin("jvm") apply false
   // NOT AN ERROR, it's a bug, see: https://youtrack.jetbrains.com/issue/KTIJ-19369
   // You can install a plugin to suppress it:
